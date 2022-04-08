@@ -2,27 +2,26 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function HelpPage() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Womble chat | A chat app</title>
-        <link rel="icon" href="/favicon.ico"/>
+        <title>Womble chat | Help</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a>Womble chat!</a>
+          Support page coming soon
         </h1>
 
         <p className={styles.description}>
-          Just another chat application (coming soon)
+          Will probably be a separate page.
         </p>
 
         <div className={styles.grid}>
-          <a href="/help" className={styles.card}>
-            <h2>Help &rarr;</h2>
-            <p>Go here for help</p>
+          <a href="./" className={styles.card}>
+            <h2>&rarr; Return Home &larr;</h2>
           </a>
         </div>
       </main>

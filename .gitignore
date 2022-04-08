@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# vscode
+/.vscode/
+
 # production
 /build
 
@@ -33,3 +36,4 @@ yarn-error.log*
 
 # vercel
 .vercel
+
