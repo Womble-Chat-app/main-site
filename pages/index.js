@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Womble chat | A chat app</title>
-        <link rel="icon" href="/favicon.ico"/>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
@@ -20,24 +21,17 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="/help" className={styles.card}>
-            <h2>Help &rarr;</h2>
+          <a className={styles.card}>
+            <Link href="/help" passHref><h2>Help &rarr;</h2></Link>
             <p>Go here for help</p>
           </a>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://github.com/Womble-Chat-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Our GitHub{' '}
-          <span className={styles.ghlogo}>
-            <Image src="/GitHub-Mark.png" alt="Womble Chat logo" width={32} height={32} />
-          </span>
-        </a>
+        <div>
+          <Link href="https://github.com/Womble-Chat-app" target="_blank" rel="noopener noreferrer">Our GitHub</Link>
+        </div>
       </footer>
     </div>
   )
