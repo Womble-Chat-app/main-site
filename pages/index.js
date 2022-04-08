@@ -23,7 +23,7 @@ export default function Home() {
         <div className={styles.grid}>
           <a className={styles.card}>
             <Link href="/help" passHref><h2>Help &rarr;</h2></Link>
-            <p>Go here for help</p>
+            <Link href="/help" passHref>Go here for help</Link>
           </a>
         </div>
       </main>
