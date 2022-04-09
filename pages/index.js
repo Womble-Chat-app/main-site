@@ -7,7 +7,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Womble chat | A chat app</title>
+        <title>Womble chat | Chatting, Decentralised</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Womble chat | Chatting, Decentralised" />
+        <meta property="og:description" content="Womble chat is a decentralised chat app built with Next.js and WebRTC" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -23,7 +26,7 @@ export default function Home() {
         <div className={styles.grid}>
           <a className={styles.card}>
             <Link href="/help" passHref><h2>Help &rarr;</h2></Link>
-            <Link href="/help" passHref>Go here for help</Link>
+            <Link href="/help" passHref><p>Go here for help</p></Link>
           </a>
         </div>
       </main>
